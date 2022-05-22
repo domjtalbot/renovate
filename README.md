@@ -2,7 +2,7 @@
 
 <h1 align="center">Renovate</h1>
 
-<p align="center">:bot: A reusable [Renovate](https://docs.renovatebot.com) for my projects.</p>
+<p align="center">🤖 A reusable <a href="https://docs.renovatebot.com">Renovate</a> for my projects.</p>
 
 <div align="center">
   <p dir="auto">
