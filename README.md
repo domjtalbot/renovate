@@ -16,8 +16,18 @@
 
 ## How to use
 
-TBC
-
+```json5
+{
+  /*
+   * Extend the default configuration.
+   *
+   * Documentation - https://docs.renovatebot.com/configuration-options/#extends
+   */
+  extends: [
+    "github>domjtalbot/renovate"
+  ]
+}
+```
 
 <br/>
 <br/>
