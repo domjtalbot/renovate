@@ -1,0 +1,18 @@
+{
+  extends: ["github>domjtalbot/renovate:core.json5"],
+
+  /*
+   * Whether to update internal dep versions in a monorepo.
+   *
+   * @link Documentation - https://docs.renovatebot.com/configuration-options/#updateinternaldeps
+   */
+  updateInternalDeps: true,
+
+  packageRules: [
+    {
+      matchPackagePatterns: ["^@nrwl/", "nx"],
+      groupName: "Nx workspace",
+      enabled: true,
+    },
+  ],
+}
