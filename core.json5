@@ -70,23 +70,23 @@
      * ================================
      */
     {
-      labels: ['github actions'],
+      addLabels: ['github actions'],
       matchPaths: ['.github/workflows/**/*.*'],
     },
     {
-      labels: ['version-major'],
+      addLabels: ['version-major'],
       matchUpdateTypes: ['major'],
     },
     {
-      labels: ['version-minor'],
+      addLabels: ['version-minor'],
       matchUpdateTypes: ['minor'],
     },
     {
-      labels: ['version-patch'],
+      addLabels: ['version-patch'],
       matchUpdateTypes: ['patch'],
     },
     {
-      labels: ['version-pin'],
+      addLabels: ['version-pin'],
       matchUpdateTypes: ['pin'],
     },
 
@@ -154,7 +154,7 @@
     {
       // automerge: false,
       // automergeStrategy: 'squash',
-      // labels: ['automerge'],
+      // addLabels: ['automerge'],
       matchUpdateTypes: ['minor', 'patch'],
     },
   ],
