@@ -41,6 +41,17 @@
   labels: ['bot', 'dependencies', 'renovate'],
 
   /*
+   * This feature can be used to refresh lock files and keep them up-to-date. 
+   * "Maintaining" a lock file means recreating it so that every dependency 
+   * version within it is updated to the latest.
+   *
+   * @link Documentation - https://docs.renovatebot.com/configuration-options/#lockfilemaintenance
+   */
+  lockFileMaintenance: {
+    "enabled": true,
+  },
+
+  /*
    * Node version support policy.
    *
    * @link Documentation - https://docs.renovatebot.com/configuration-options/#supportPolicy
