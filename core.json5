@@ -154,7 +154,7 @@
     {
       // automerge: false,
       // automergeStrategy: 'squash',
-      labels: ['automerge'],
+      // labels: ['automerge'],
       matchUpdateTypes: ['minor', 'patch'],
     },
   ],
