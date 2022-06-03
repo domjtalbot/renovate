@@ -89,10 +89,6 @@
       labels: ['version-pin'],
       matchUpdateTypes: ['pin'],
     },
-    {
-      labels: ['version-digest'],
-      matchUpdateTypes: ['digest'],
-    }
 
     /*
      * ================================
@@ -159,7 +155,7 @@
       // automerge: false,
       // automergeStrategy: 'squash',
       labels: ['automerge'],
-      matchUpdateTypes: ['minor', 'patch', 'digest'],
+      matchUpdateTypes: ['minor', 'patch'],
     },
   ],
 
