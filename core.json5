@@ -4,7 +4,7 @@
    *
    * @link Documentation - https://docs.renovatebot.com/configuration-options/#basebranches
    */
-  baseBranches: ['main'],
+  baseBranches: ["main"],
 
   /*
    * Creates an GitHub issue, that is used to
@@ -28,9 +28,10 @@
    * @link Shareable Config Presets - https://docs.renovatebot.com/config-presets/
    */
   extends: [
-    'config:base',
-    ':semanticCommits',
-    'helpers:pinGitHubActionDigests',
+    "config:base",
+    ":semanticCommits",
+    "helpers:pinGitHubActionDigests",
+    "group:monorepos",
   ],
 
   /*
@@ -38,17 +39,17 @@
    *
    * @link Documentation - https://docs.renovatebot.com/configuration-options/#labels
    */
-  labels: ['bot', 'dependencies', 'renovate'],
+  labels: ["bot", "dependencies", "renovate"],
 
   /*
-   * This feature can be used to refresh lock files and keep them up-to-date. 
-   * "Maintaining" a lock file means recreating it so that every dependency 
+   * This feature can be used to refresh lock files and keep them up-to-date.
+   * "Maintaining" a lock file means recreating it so that every dependency
    * version within it is updated to the latest.
    *
    * @link Documentation - https://docs.renovatebot.com/configuration-options/#lockfilemaintenance
    */
   lockFileMaintenance: {
-    "enabled": true,
+    enabled: true,
   },
 
   /*
@@ -57,7 +58,7 @@
    * @link Documentation - https://docs.renovatebot.com/configuration-options/#supportPolicy
    */
   node: {
-    supportPolicy: 'lts_latest',
+    supportPolicy: "lts_latest",
   },
 
   /*
@@ -81,24 +82,24 @@
      * ================================
      */
     {
-      addLabels: ['github actions'],
-      matchPaths: ['.github/workflows/**/*.*'],
+      addLabels: ["github actions"],
+      matchPaths: [".github/workflows/**/*.*"],
     },
     {
-      addLabels: ['version-major'],
-      matchUpdateTypes: ['major'],
+      addLabels: ["version-major"],
+      matchUpdateTypes: ["major"],
     },
     {
-      addLabels: ['version-minor'],
-      matchUpdateTypes: ['minor'],
+      addLabels: ["version-minor"],
+      matchUpdateTypes: ["minor"],
     },
     {
-      addLabels: ['version-patch'],
-      matchUpdateTypes: ['patch'],
+      addLabels: ["version-patch"],
+      matchUpdateTypes: ["patch"],
     },
     {
-      addLabels: ['version-pin'],
-      matchUpdateTypes: ['pin'],
+      addLabels: ["version-pin"],
+      matchUpdateTypes: ["pin"],
     },
 
     /*
@@ -115,8 +116,8 @@
      * ================================
      */
     {
-      matchDepTypes: ['peerDependencies'],
-      rangeStrategy: 'bump',
+      matchDepTypes: ["peerDependencies"],
+      rangeStrategy: "bump",
     },
 
     /*
@@ -139,7 +140,6 @@
      *
      * ================================
      */
-    
 
     /*
      * ================================
@@ -166,7 +166,7 @@
       // automerge: false,
       // automergeStrategy: 'squash',
       // addLabels: ['automerge'],
-      matchUpdateTypes: ['minor', 'patch'],
+      matchUpdateTypes: ["minor", "patch"],
     },
   ],
 
@@ -190,7 +190,7 @@
    *
    * @link Documentation - https://docs.renovatebot.com/configuration-options/#prcreation
    */
-  prCreation: 'not-pending',
+  prCreation: "not-pending",
 
   /*
    * Rate limit hour many pull requests are opened
@@ -211,7 +211,7 @@
    *
    * @link Documentation - https://docs.renovatebot.com/configuration-options/#rangestrategy
    */
-  rangeStrategy: 'auto',
+  rangeStrategy: "auto",
 
   /*
    * Times of day/week to limit when Renovate
@@ -219,7 +219,7 @@
    *
    * @link Documentation - https://docs.renovatebot.com/configuration-options/#schedule
    */
-  schedule: ['after 11pm', 'before 6am'],
+  schedule: ["after 11pm", "before 6am"],
 
   /*
    * Number of days required to have passed before
@@ -237,5 +237,5 @@
    *
    * @link Documentation - https://docs.renovatebot.com/configuration-options/#timezone
    */
-  timezone: 'Europe/London',
+  timezone: "Europe/London",
 }
